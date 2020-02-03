@@ -17,5 +17,4 @@ export default class Child extends React.Component {
             </div>
         )
     }
-    
 }
