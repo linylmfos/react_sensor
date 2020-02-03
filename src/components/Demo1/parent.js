@@ -1,4 +1,5 @@
 import React from "react"
+import Child from "./child"
 
 const MyAPI = {
     count: 0,
@@ -36,9 +37,11 @@ export default class Parent extends React.Component {
     }
     render() {
         console.log(this.state.count);
+        console.log("parent -> render")
         return (
             <div>
                 Parent: {  this.state.count }
+                <Child num={this.state.count} />
             </div>
         )
     }
